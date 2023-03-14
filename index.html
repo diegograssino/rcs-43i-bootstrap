@@ -11,9 +11,13 @@
 </head>
 
 <body>
-	<h1>Bootstrap5</h1>
+	<div class="container-fluid py-3 px-1 bg-primary text-center text-light mb-3">
+		<h1>Bootstrap5</h1>
+	</div>
 
-	<h2>Colors</h2>
+	<div class="bg-secondary text-light mb-3 px-3 py-2 mx-1 rounded-pill">
+		<h2>Colors</h2>
+	</div>
 	<p>
 		Bootstrap ya incluye una serie de colores, entre los que están: <span class="bg-primary text-light">Primary</span>,
 		<span class="bg-secondary text-light">Secondary</span>, <span class="bg-success text-light">Success</span>, <span
@@ -24,7 +28,9 @@
 	<p>Puedo combinarlos como quiera y puedo tambien customizarlos, si quiero cambiar el color del texto utilizo la clase
 		text-{color} y para fondos la clase bg-{color}</p>
 
-	<h2>Display</h2>
+	<div class="bg-secondary text-light mb-3 px-3 py-2 mx-1 rounded-pill">
+		<h2>Display</h2>
+	</div>
 	<p>Tengo la clase d-{display} para poder editar el tipo de display, por ejemplo:</p>
 
 	<div class="d-inline">Inline</div>
@@ -32,8 +38,9 @@
 	<div class="d-block">Block</div>
 	<div class="d-flex">Flex</div>
 	<div class="d-none">None</div>
-
-	<h2>Containers</h2>
+	<div class="bg-secondary text-light mb-3 px-3 py-2 mx-1 rounded-pill">
+		<h2>Containers</h2>
+	</div>
 	<p>Los containers son muy utilizados, le da a (por ejemplo) a los div ciertas caracteristicas responsive basadas en
 		flex.</p>
 	<div class="container correctivo">
@@ -45,10 +52,67 @@
 	</div>
 
 	<h2>Margin y padding</h2>
+	<p>Las clases que empiezan con m- y p- son de margin y padding respectivamente, los "pasos" varian entre .25, .5, 1,
+		1.5 y 3.</p>
+
+	<div class="border border-2 border-dark mt-0` me-1 mb-2 ms-3">Esto es un div con margin distinto en cada lado</div>
+
+	<div class="border border-2 border-dark p-3">Esto es un div con padding 3 (1 rem)</div>
+
+	<div class="border border-2 border-dark mb-5">Esto es un div con margin top 5 (3 rem)</div>
+
+	<div class="border border-2 border-dark p-5">Esto es un div con padding 5 (3 rem)</div>
 
 	<h2>Borders</h2>
 
+	<p>Puedo controlar los bordes con las clases border, border-{lado} y border-{color}. Recordar que primero debo aplicar
+		border o border-{lado}</p>
+
+	<div class="border border-info border-2 mb-2 mx-2">Este div tiene la clase border, color info y es de 2px</div>
+
+	<div class="border border-danger border-2 rounded mb-2 mx-2 p-2">Este div tiene la clase border, color danger, es de
+		2px y
+		borde
+		redondeado
+	</div>
+
 	<h2>Typography</h2>
+
+	<p>Los headings o h ya vienen predefinidos en BS, igual yo podría pisarlos con mi propio css.</p>
+
+	<h1>h1. Bootstrap heading</h1>
+	<h2>h2. Bootstrap heading</h2>
+	<h3>h3. Bootstrap heading</h3>
+	<h4>h4. Bootstrap heading</h4>
+	<h5>h5. Bootstrap heading</h5>
+	<h6>h6. Bootstrap heading</h6>
+
+	<p>Puedo hacer que un p se vea como un h utilizando las clases h1, h22, etc etc</p>
+	<p class="h1">p + h1. Bootstrap heading</p>
+	<p class="h2">p + h2. Bootstrap heading</p>
+	<p class="h3">p + h3. Bootstrap heading</p>
+	<p class="h4">p + h4. Bootstrap heading</p>
+	<p class="h5">p + h5. Bootstrap heading</p>
+	<p class="h6">p + h6. Bootstrap heading</p>
+
+	<p>Tambien puedo utilizar la clase text-muted para poner un texto en color menos intenso.</p>
+
+	<p>Este texto tiene una palabra
+		<span class="text-muted">muteada.</span>
+	</p>
+
+	<p>Puedo utilizar las clases Display para que el texto se vea mas o menos grande</p>
+	<h1 class="display-1">Display 1</h1>
+	<h1 class="display-2">Display 2</h1>
+	<h1 class="display-3">Display 3</h1>
+	<h1 class="display-4">Display 4</h1>
+	<h1 class="display-5">Display 5</h1>
+	<h1 class="display-6">Display 6</h1>
+
+	<p>Usando las clases text-{alineación} puedo alinear el texto</p>
+
+	<p class="text-center">Este texto esta centrado</p>
+	<p class="text-end">Este texto esta al final</p>
 
 	<h2>Responsive</h2>
 
@@ -69,11 +133,6 @@
 	<h2>Modal</h2>
 
 	<h2>Forms</h2>
-
-
-
-
-
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
