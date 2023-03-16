@@ -15,7 +15,9 @@
 		<h1>Bootstrap5</h1>
 	</div>
 
-	<div class="bg-secondary text-light mb-3 px-3 py-2 mx-1 rounded-pill">
+	<a href="https://bootstrap-cheatsheet.themeselection.com/">Link al Cheatsheet</a>
+
+	<div class="bg-secondary text-light mt-2 mb-3 px-3 py-2 mx-1 rounded-pill">
 		<h2>Colors</h2>
 	</div>
 	<p>
@@ -114,13 +116,150 @@
 	<p class="text-center">Este texto esta centrado</p>
 	<p class="text-end">Este texto esta al final</p>
 
-	<h2>Responsive</h2>
-
-	<h2>Sizing</h2>
-
 	<h2>Flex</h2>
 
+	<p>Bootstrap esta basado en Flex, aparte tengo clases utilitarias para aplicar Flex donde deseee.</p>
+
+	<div class="d-flex">Este es un div Flex</div>
+
+	<p> Acá abajo tenemos un contenedor Flex padre con dos hijos sin configuración, automanticamente se posicionan como
+		fila y
+		al principio del contenedor.</p>
+	<div class="d-flex">
+		<div>Hijo 1</div>
+		<div>Hijo 2</div>
+	</div>
+
+	<p>Ejemplo de contenedor Flex con espacio en el medio</p>
+
+	<div class="d-flex justify-content-between">
+		<div>Hijo 1</div>
+		<div>Hijo 2</div>
+	</div>
+
+	<p>Ejemplo de contenedor Flex con todo centrado</p>
+
+	<div class="d-flex justify-content-center">
+		<div>Hijo 1</div>
+		<div>Hijo 2</div>
+	</div>
+
+	<p>Esto es un contenedor Flex centrado</p>
+
+	<div style="height: 100px;" class="d-flex justify-content-center align-items-center">
+		<div>Centrando con Flex</div>
+	</div>
+
+	<p>Esto es un contenedor Flex que cambia de row a column en el breakpoint md</p>
+
+
+	<h2>Responsive</h2>
+
+	<p>Un contenedor flex que cambia su direccion en funcion del ancho dela pantalla</p>
+	<div class="d-flex flex-md-column">
+		<div>Hijo 1</div>
+		<div>Hijo 2</div>
+	</div>
+
+	<p>Un contenedor que cambia margin en funcion del ancho dela pantalla</p>
+	<div class="m-0 m-md-2 m-lg-5">
+		Margin cambia
+	</div>
+
+
+
+	<p>Tambien dispongo de clases utilitarias para manejar width y heigth</p>
+
+	<p>Puedo manejar las medidas porcentuales</p>
+
+	<div class="w-25 bg-danger text-light">Width 25%</div>
+	<div class="w-50 bg-danger text-light">Width 50%</div>
+	<div class="w-75 bg-danger text-light">Width 75%</div>
+	<div class="w-100 bg-danger text-light">Width 100%</div>
+
+	<div style="height: 100px;" class="bg-danger">
+		<div class="h-25  text-light">Heigth 25%</div>
+	</div>
+	<div style="height: 100px;">
+		<div class="h-100 bg-danger text-light">Heigth 100%</div>
+	</div>
+
+	<p>Puedo manejar medidas de pantalla o viewport</p>
+
+	<div class="vw-100 bg-info">Width 100vw</div>
+	<div class="vh-100 bg-success">Height 100vh</div>
+
 	<h2>Grid</h2>
+
+	<p>Bootstrap tiene un sistema de grilla propio. Funciona, basicamente, con las clases row y col.</p>
+
+	<p>Las grillas se dividen hasta (y en base) 12</p>
+
+	<div class="container">
+		<div class="row">
+			<div class="col border border-secondary">1</div>
+			<div class="col border border-secondary">2</div>
+			<div class="col border border-secondary">3</div>
+			<div class="col border border-secondary">4</div>
+			<div class="col border border-secondary">5</div>
+			<div class="col border border-secondary">6</div>
+			<div class="col border border-secondary">7</div>
+			<div class="col border border-secondary">8</div>
+			<div class="col border border-secondary">9</div>
+			<div class="col border border-secondary">10</div>
+			<div class="col border border-secondary">11</div>
+			<div class="col border border-secondary">12</div>
+		</div>
+		<div class="row">
+			<div class="col border border-secondary">1</div>
+			<div class="col border border-secondary">2</div>
+			<div class="col border border-secondary">3</div>
+			<div class="col border border-secondary">4</div>
+			<div class="col border border-secondary">5</div>
+			<div class="col border border-secondary">6</div>
+			<div class="col border border-secondary">7</div>
+			<div class="col border border-secondary">8</div>
+			<div class="col border border-secondary">9</div>
+			<div class="col border border-secondary">10</div>
+			<div class="col border border-secondary">11</div>
+			<div class="col border border-secondary">12</div>
+		</div>
+		<div class="row">
+			<div class="col border border-secondary">1</div>
+			<div class="col border border-secondary">2</div>
+			<div class="col border border-secondary">3</div>
+			<div class="col border border-secondary">4</div>
+			<div class="col border border-secondary">5</div>
+			<div class="col border border-secondary">6</div>
+			<div class="col border border-secondary">7</div>
+			<div class="col border border-secondary">8</div>
+			<div class="col border border-secondary">9</div>
+			<div class="col border border-secondary">10</div>
+			<div class="col border border-secondary">11</div>
+			<div class="col border border-secondary">12</div>
+		</div>
+	</div>
+
+	<p>Dentro de esos valores puedo utilizarlas como yo desee</p>
+
+	<div class="container">
+		<div class="row">
+			<div class="col border border-secondary">1</div>
+			<div class="col border border-secondary">2</div>
+			<div class="col border border-secondary">3</div>
+		</div>
+	</div>
+
+	<section class="container">
+		<div class="row" style="height: 100px;">
+			<article style="height: 100px;"
+				class="col-2 border border-secondary d-flex justify-content-center align-items-center">
+				<div>Centrando con Flex</div>
+			</article>
+			<article class="col-4 col-md-2 border border-secondary">4</article>
+			<article class="col-6 col-md-8 border border-secondary">6</article>
+		</div>
+	</section>
 
 	<h2>Navbar</h2>
 
